@@ -34,3 +34,22 @@ console.log(typeof a);
     console.log(c)
     // c=`saba`;  TypeError: Assignment to constant variable.
     console.log(c)
+    // 2nd problem with var keyword 
+    //    .var is function scope in case of function else is global scope
+    // let is block scope
+    var r=10;
+    for(var i=0;i<r;i++){
+        if(i%2==0){
+            var h=1000;
+            console.log(i);
+        }
+    }
+    console.log(r);
+    console.log(h);
+
+    for(let i=0;i<10;i++){
+        console.log(i);
+        let j=200;
+        console.log(j);
+    }
+// console.log(j) ReferenceError: j is not defined
