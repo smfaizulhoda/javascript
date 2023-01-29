@@ -35,3 +35,5 @@ let array2d=[
 console.log(array2d);
 console.log(array2d[1][2]);
 console.table(array2d);
+console.log(array2d.length);
+console.log(array2d[1].length)
